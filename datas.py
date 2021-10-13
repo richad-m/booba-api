@@ -2,7 +2,7 @@ import gspread
 import secrets_key
 
 
-def fetching_db():
+def fetch_datas():
   # Fetches data from my google_sheet
     # Get your crendentials in google developers portal
     gsheet_credentials = secrets_key.gsheet_credentials
@@ -11,6 +11,3 @@ def fetching_db():
     sh = gc.open_by_key(secrets_key.sheet_id)
     database = sh.sheet1
     return database.get_all_records()
-
-
-db = fetching_db()
