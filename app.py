@@ -11,16 +11,21 @@ def index():
     return render_template('index.html')
 
 
-@app.route('/api/quote')
+@app.route('/api/quotes/')
 def quote():
     db = fetch_datas()
     return random.sample(db, 1)[0]
 
 
-@app.route('/api/guess')
+@app.route('/api/guess/')
 def guess_the_word():
     db = fetch_datas()
     return hole_in_sentence(random.sample(db, 1)[0]['phrase'])
+
+
+@app.route('/api/quotes/<quote_id>')
+def find_quote(quote_id):
+    return 'Not implemented yet'
 
 
 if __name__ == "__main__":

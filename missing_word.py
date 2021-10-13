@@ -13,6 +13,3 @@ def hole_in_sentence(string):
     holed_sentence = string.replace(word_to_replace, '______')
     response = {'quote': holed_sentence, 'missing_word': word_to_replace}
     return response
-
-
-print(hole_in_sentence("Le ciel sait que l'on saigne, sous nos cagoules"))

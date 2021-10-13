@@ -1,0 +1,62 @@
+:root {
+  --purple: #401481;
+  --green: #70f8ba;
+  --blue: #7cb4b8;
+  --dark_green: #002a22;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container-fluid {
+  background-color: var(--blue);
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title-card {
+  background: var(--dark_green);
+  border: 5px solid white;
+  width: 100vh;
+  height: 100vh;
+}
+
+.banner-image {
+  background-image: url(https://imgr.search.brave.com/pRyRdwfHzyxUizRdzVernSSGJuOJPRcFFp1QWq6kuAQ/fit/1000/539/ce/1/aHR0cHM6Ly9zdGF0/aWMuYm9vc2thLXAu/Y29tL2ltYWdlcy9u/ZXdzX29wdGkvMTAw/MC9ib29iYS1ub3V2/ZWxsZS1leGNsdS1z/dXItaW5zdGFncmFt/LXNvbi5qcGc);
+  background-size: cover;
+  object-fit: cover;
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner {
+  border: 5px solid green;
+}
+
+.banner-main-text {
+  color: white;
+  font-weight: bolder;
+  position: absolute;
+  top: 0;
+  color: var(--green);
+  font-size: larger;
+}
+
+.banner-subtext {
+  color: white;
+  position: absolute;
+  bottom: 0;
+  color: var(--purple);
+  font-weight: bolder;
+  font-size: large;
+}
