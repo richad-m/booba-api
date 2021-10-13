@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
 :root {
   --purple: #401481;
   --green: #70f8ba;
@@ -8,6 +10,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: Poppins;
 }
 
 .container-fluid {
@@ -17,11 +20,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+  padding-top: 1em;
 }
 
 .title-card {
-  background: var(--dark_green);
-  border: 5px solid white;
+  background: white;
+  /* border: 5px solid white; */
   width: 100vh;
   height: 100vh;
 }
@@ -39,9 +44,9 @@
   align-items: center;
 }
 
-.banner {
+/* .banner {
   border: 5px solid green;
-}
+} */
 
 .banner-main-text {
   color: white;
@@ -56,7 +61,48 @@
   color: white;
   position: absolute;
   bottom: 0;
-  color: var(--purple);
+  color: var(--dark_green);
   font-weight: bolder;
   font-size: large;
+}
+
+.presentation {
+  color: white;
+}
+
+.numbers {
+  color: var(--green);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.6em;
+}
+
+.number {
+  border: 5px solid var(--purple);
+  background-color: var(--purple);
+  border-radius: 10%;
+  font-weight: 600;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+  width: 98vh;
+}
+
+.social-icons {
+  font-size: 2.2em;
+  color: var(--purple);
+}
+
+.social-icons:hover {
+  color: var(--green);
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.content {
+  color: var(--purple);
 }
