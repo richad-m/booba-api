@@ -62,6 +62,17 @@ body {
   font-family: Poppins;
 }
 
+.inspired {
+  color: lightgrey;
+}
+
+a .inspired {
+  color: lightgrey;
+}
+
+.inspired:hover {
+  color: grey;
+}
 .container-fluid {
   background-color: var(--blue);
   text-align: center;
@@ -70,6 +81,10 @@ body {
   justify-content: center;
   position: relative;
   padding-top: 1em;
+}
+
+.main-title {
+  margin: 1em;
 }
 
 .title-card {
