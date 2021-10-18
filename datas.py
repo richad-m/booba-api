@@ -7,19 +7,25 @@ from dotenv import load_dotenv
 dotenv_path = join(dirname(__file__), '.env')
 load_dotenv(dotenv_path)
 
-sheet_id = os.environ.get("sheet_id")
-gsheet_credentials = {
-    "type": os.environ.get("type"),
-    "project_id": os.environ.get("project_id"),
-    "private_key_id": os.environ.get("private_key_id"),
-    "private_key": os.environ.get('private_key'),
-    "client_email": os.environ.get("client_email"),
-    "client_id": os.environ.get("client_id"),
-    "auth_uri": os.environ.get("auth_uri"),
-    "token_uri": os.environ.get("token_uri"),
-    "auth_provider_x509_cert_url": os.environ.get("auth_provider_x509_cert_url"),
-    "client_x509_cert_url": os.environ.get("client_x509_cert_url"),
-}
+
+if os.environ['USER'] == 'richad':
+    sheet_id = os.environ.get("sheet_id")
+    gsheet_credentials = {
+        "type": os.environ.get("type"),
+        "project_id": os.environ.get("project_id"),
+        "private_key_id": os.environ.get("private_key_id"),
+        "private_key": os.environ.get('private_key'),
+        "client_email": os.environ.get("client_email"),
+        "client_id": os.environ.get("client_id"),
+        "auth_uri": os.environ.get("auth_uri"),
+        "token_uri": os.environ.get("token_uri"),
+        "auth_provider_x509_cert_url": os.environ.get("auth_provider_x509_cert_url"),
+        "client_x509_cert_url": os.environ.get("client_x509_cert_url"),
+    }
+else:
+    print('Je suis en production')
+    sheet_id = os.environ.get('sheet_id')
+    gsheet_credentials = os.environ.get('gsheet_credentials')
 
 
 def fetch_datas():
