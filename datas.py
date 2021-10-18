@@ -8,7 +8,8 @@ dotenv_path = join(dirname(__file__), '.env')
 load_dotenv(dotenv_path)
 
 
-if os.environ['USER'] == 'richad':
+try:
+    os.environ['USER'] == 'richad'
     sheet_id = os.environ.get("sheet_id")
     gsheet_credentials = {
         "type": os.environ.get("type"),
@@ -22,7 +23,7 @@ if os.environ['USER'] == 'richad':
         "auth_provider_x509_cert_url": os.environ.get("auth_provider_x509_cert_url"),
         "client_x509_cert_url": os.environ.get("client_x509_cert_url"),
     }
-else:
+except KeyError:
     print('Je suis en production')
     sheet_id = os.environ.get('sheet_id')
     gsheet_credentials = os.environ.get('gsheet_credentials')
