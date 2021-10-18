@@ -24,57 +24,60 @@
   </head>
   <body>
     <div class="container-fluid">
-      <div class="title-card">
-        <div class="banner">
-          <div class="banner-image">
-            <div class="banner-main-text">
-              <p class="api-title">BOOBA QUOTES API</p>
-            </div>
-          </div>
-        </div>
-        <div class="presentation">
-          <div class="banner-subtext">
-            <p class="main-title">The most advanced Booba API ever developed</p>
-          </div>
-          <div class="numbers">
-            <div class="numbers-items">
-              <div class="number" id="nbr-quotes">500</div>
-              <div class="items purple">quotes</div>
-            </div>
-            <em class="purple">from</em>
-            <div class="numbers-items">
-              <div class="number">10</div>
-              <div class="items purple">albums</div>
-            </div>
-          </div>
-          <div class="content">
-            <div class="category">
-              <div class="category-title banner-subtext">Presentation</div>
-              <div class="category-content">
-                This API lets you fetch a random Booba quote : you'll have
-                access to the album, the song title and the year of publication.
-                Additionnally, the API can respond a quote to complete, perfect
-                to play games with your friends.
-                <br /><br />Try the discord quizz bot 👉
-                <a
-                  href="https://discord.com/oauth2/authorize?client_id=895665219819417630&permissions=0&scope=bot"
-                >
-                  Invite Booba Quizz Bot</a
-                >
+      <div class="row">
+        <div class="title-card col-lg-6 col-md-12">
+          <div class="banner">
+            <div class="banner-image">
+              <div class="banner-main-text">
+                <p class="api-title">BOOBA QUOTES API</p>
               </div>
             </div>
-            <div class="category">
-              <div class="category-title banner-subtext">
-                <code>GET /api/quotes</code> Random quotes
+          </div>
+          <div class="presentation flex-wrap">
+            <div class="banner-subtext">
+              <p class="main-title">
+                The most advanced Booba API ever developed
+              </p>
+            </div>
+            <div class="numbers">
+              <div class="numbers-items">
+                <div class="number" id="nbr-quotes">500</div>
+                <div class="items purple">quotes</div>
               </div>
-              <div class="category-content">
-                <p>
-                  Retrieve a random quote from the custom DataBase, along with
-                  album name, song title and year of publication.
-                  <br />
-                  <br />Exemple of reponse below 👇
-                </p>
-                <pre class="json">
+              <em class="purple">from</em>
+              <div class="numbers-items">
+                <div class="number">10</div>
+                <div class="items purple">albums</div>
+              </div>
+            </div>
+            <div class="content">
+              <div class="category">
+                <div class="category-title banner-subtext">Presentation</div>
+                <div class="category-content">
+                  This API lets you fetch a random Booba quote : you'll have
+                  access to the album, the song title and the year of
+                  publication. Additionnally, the API can respond a quote to
+                  complete, perfect to play games with your friends.
+                  <br /><br />Try the discord quizz bot 👉
+                  <a
+                    href="https://discord.com/oauth2/authorize?client_id=895665219819417630&permissions=0&scope=bot"
+                  >
+                    Invite Booba Quizz Bot</a
+                  >
+                </div>
+              </div>
+              <div class="category">
+                <div class="category-title banner-subtext">
+                  <code>GET /api/quotes</code> Random quotes
+                </div>
+                <div class="category-content">
+                  <p>
+                    Retrieve a random quote from the custom DataBase, along with
+                    album name, song title and year of publication.
+                    <br />
+                    <br />Exemple of reponse below 👇
+                  </p>
+                  <pre class="json">
                   <br />
                   <code>
                   <span class ="punctuation-code">{</span>
@@ -90,19 +93,19 @@
                   </code>
                   
                 </pre>
+                </div>
               </div>
-            </div>
-            <div class="category">
-              <div class="category-title banner-subtext">
-                <code>GET /api/guess</code> Find the missing word
-              </div>
-              <div class="category-content">
-                <p>
-                  Retrieve a quote with a random word missing. The missing word
-                  is in the response as well. Perfect for quizz !
-                  <br /><br />Exemple of reponse below 👇
-                </p>
-                <pre class="json">
+              <div class="category">
+                <div class="category-title banner-subtext">
+                  <code>GET /api/guess</code> Find the missing word
+                </div>
+                <div class="category-content">
+                  <p>
+                    Retrieve a quote with a random word missing. The missing
+                    word is in the response as well. Perfect for quizz !
+                    <br /><br />Exemple of reponse below 👇
+                  </p>
+                  <pre class="json">
                   <br />
                   <code class = ''>
                   <span class ="punctuation-code">{</span>
@@ -114,20 +117,21 @@
                   </code>
                   
                 </pre>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="inspired">
-          Totally inspired by
-          <a class="inspired" href="http://www.booba.cloud">Booba.cloud</a>
-        </div>
-        <div class="footer">
-          <a href="https://github.com/richad-m"
-            ><i class="fab fa-github social-icons"></i
-          ></a>
-          <a href="#"><i class="fab fa-linkedin social-icons"></i></a>
-          <a href="#"><i class="fab fa-twitter social-icons"></i></a>
+          <div class="inspired">
+            Totally inspired by
+            <a class="inspired" href="http://www.booba.cloud">Booba.cloud</a>
+          </div>
+          <div class="footer">
+            <a href="https://github.com/richad-m"
+              ><i class="fab fa-github social-icons"></i
+            ></a>
+            <a href="#"><i class="fab fa-linkedin social-icons"></i></a>
+            <a href="#"><i class="fab fa-twitter social-icons"></i></a>
+          </div>
         </div>
       </div>
     </div>
