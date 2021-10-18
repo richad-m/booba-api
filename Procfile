@@ -1,0 +1,1 @@
+init: FLASK_APP=app.py
