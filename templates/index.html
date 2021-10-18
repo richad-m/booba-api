@@ -28,7 +28,7 @@
         <div class="banner">
           <div class="banner-image">
             <div class="banner-main-text">
-              <p>Booba quotes API</p>
+              <p class="api-title">BOOBA QUOTES API</p>
             </div>
           </div>
         </div>
@@ -51,10 +51,16 @@
             <div class="category">
               <div class="category-title banner-subtext">Presentation</div>
               <div class="category-content">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
-                incidunt suscipit neque sequi dolorem ad ipsum repellat nulla
-                numquam perferendis sed illum asperiores ab pariatur dolores
-                architecto provident, sunt nemo.
+                This API lets you fetch a random Booba quote : you'll have
+                access to the album, the song title and the year of publication.
+                Additionnally, the API can respond a quote to complete, perfect
+                to play games with your friends.
+                <br /><br />Try the discord quizz bot 👉
+                <a
+                  href="https://discord.com/oauth2/authorize?client_id=895665219819417630&permissions=0&scope=bot"
+                >
+                  Invite Booba Quizz Bot</a
+                >
               </div>
             </div>
             <div class="category">
@@ -63,20 +69,18 @@
               </div>
               <div class="category-content">
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
-                  voluptatibus eligendi, odit possimus cupiditate expedita atque
-                  voluptates, totam accusantium doloribus amet dolorum earum?
-                  Temporibus magni veritatis aliquid deserunt. Architecto,
-                  aliquam! Response :
+                  Retrieve a random quote from the custom DataBase, along with
+                  album name, song title and year of publication.
+                  <br />Exemple of reponse below 👇
                 </p>
                 <pre class="json">
                   <br />
                   <code>
                   <span class ="punctuation-code">{</span>
                   
-                   "album"<span class="punctuation-code">:</span> <span class="string-code">"Lunatic"</span><span class="punctuation-code">,</span>
-                  "artist"<span class="punctuation-code">:</span> <span class="string-code">"Booba"</span><span class="punctuation-code">,</span>
                   "id": <span class="integer-code">326</span><span class="punctuation-code">,</span>
+                  "album"<span class="punctuation-code">:</span> <span class="string-code">"Lunatic"</span><span class="punctuation-code">,</span>
+                  "artist"<span class="punctuation-code">:</span> <span class="string-code">"Booba"</span><span class="punctuation-code">,</span>
                   "phrase": <span class="string-code">"\"Aussi méchant est-il, pourquoi ?\r\nMaître Yoda, celle-ci est pour toi\""</span><span class="punctuation-code ">,</span>
                   "song_title": <span class="string-code">"Fast Life"</span><span class="punctuation-code">,</span>
                   "year": <span class="integer-code">2010</span>
@@ -93,18 +97,16 @@
               </div>
               <div class="category-content">
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
-                  voluptatibus eligendi, odit possimus cupiditate expedita atque
-                  voluptates, totam accusantium doloribus amet dolorum earum?
-                  Temporibus magni veritatis aliquid deserunt. Architecto,
-                  aliquam! Response :
+                  Retrieve a quote with a random word missing. The missing word
+                  is in the response as well. Perfect for quizz !
+                  <br />Exemple of reponse below 👇
                 </p>
                 <pre class="json">
                   <br />
                   <code class = ''>
                   <span class ="punctuation-code">{</span>
                   
-                   "missing_word"<span class="punctuation-code">:</span> <span class="string-code">"écris"</span><span class="punctuation-code">,</span>
+                  "missing_word"<span class="punctuation-code">:</span> <span class="string-code">"écris"</span><span class="punctuation-code">,</span>
                   "quote"<span class="punctuation-code">:</span> <span class="string-code">"\"Vivre en guerre, mourir en paix\r\nJ’______ mes punchs en cellule, quartier jeune, Bâtiment B\""</span><span class="punctuation-code">,</span>
                   
                   <span class ="punctuation-code">}</span>
@@ -120,7 +122,9 @@
           <a class="inspired" href="http://www.booba.cloud">Booba.cloud</a>
         </div>
         <div class="footer">
-          <a href="#"><i class="fab fa-github social-icons"></i></a>
+          <a href="https://github.com/richad-m"
+            ><i class="fab fa-github social-icons"></i
+          ></a>
           <a href="#"><i class="fab fa-linkedin social-icons"></i></a>
           <a href="#"><i class="fab fa-twitter social-icons"></i></a>
         </div>

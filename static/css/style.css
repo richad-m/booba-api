@@ -62,6 +62,10 @@ body {
   font-family: Poppins;
 }
 
+.api-title {
+  font-size: 2em;
+}
+
 .inspired {
   color: lightgrey;
 }
@@ -85,6 +89,7 @@ a .inspired {
 
 .main-title {
   margin: 1em;
+  font-style: italic;
 }
 
 .title-card {
