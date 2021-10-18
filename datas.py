@@ -12,7 +12,7 @@ gsheet_credentials = {
     "type": os.environ.get("type"),
     "project_id": os.environ.get("project_id"),
     "private_key_id": os.environ.get("private_key_id"),
-    "private_key": os.environ.get("private_key"),
+    "private_key": os.environ.get('private_key'),
     "client_email": os.environ.get("client_email"),
     "client_id": os.environ.get("client_id"),
     "auth_uri": os.environ.get("auth_uri"),
@@ -23,7 +23,7 @@ gsheet_credentials = {
 
 
 def fetch_datas():
-    print(gsheet_credentials)
+    print(os.environ.get('private_key'))
     # Fetches data from my google_sheet
     # Get your crendentials in google developers portal
     gc = gspread.service_account_from_dict(gsheet_credentials)
