@@ -23,7 +23,8 @@ gsheet_credentials = {
 
 
 def fetch_datas():
-  # Fetches data from my google_sheet
+    print(os.environ.get('private_key'))
+    # Fetches data from my google_sheet
     # Get your crendentials in google developers portal
     gc = gspread.service_account_from_dict(gsheet_credentials)
     # Get your sheet ID directly from the URL of the spreadsheet
