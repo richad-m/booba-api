@@ -2,6 +2,7 @@ import gspread
 import os
 from os.path import join, dirname
 from dotenv import load_dotenv
+import json
 
 
 dotenv_path = join(dirname(__file__), '.env')
@@ -26,7 +27,7 @@ try:
 except KeyError:
     print('Je suis en production')
     sheet_id = os.environ.get('sheet_id')
-    gsheet_credentials = os.environ.get('gsheet_credentials')
+    gsheet_credentials = json.loads(os.environ.get('gsheet_credentials'))
 
 
 def fetch_datas():
