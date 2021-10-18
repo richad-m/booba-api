@@ -31,6 +31,7 @@ except KeyError:
 
 def fetch_datas():
     print(os.environ.get('private_key'))
+    print(type(gsheet_credentials))
     # Fetches data from my google_sheet
     # Get your crendentials in google developers portal
     gc = gspread.service_account_from_dict(gsheet_credentials)
