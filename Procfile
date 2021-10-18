@@ -1,2 +1,2 @@
-web: gunicorn app:app
+web: gunicorn booba-api:app
 init: FLASK_APP=app.py
