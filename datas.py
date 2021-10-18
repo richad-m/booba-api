@@ -10,6 +10,7 @@ load_dotenv(dotenv_path)
 
 
 try:
+  # try to get credentials from .env file if in development environment
     os.environ['USER'] == 'richad'
     sheet_id = os.environ.get("sheet_id")
     gsheet_credentials = {
@@ -25,14 +26,12 @@ try:
         "client_x509_cert_url": os.environ.get("client_x509_cert_url"),
     }
 except KeyError:
-    print('Je suis en production')
+    # If in production environment
     sheet_id = os.environ.get('sheet_id')
     gsheet_credentials = json.loads(os.environ.get('gsheet_credentials'))
 
 
 def fetch_datas():
-    print(os.environ.get('private_key'))
-    print(type(gsheet_credentials))
     # Fetches data from my google_sheet
     # Get your crendentials in google developers portal
     gc = gspread.service_account_from_dict(gsheet_credentials)

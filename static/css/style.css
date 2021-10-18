@@ -117,7 +117,8 @@ a .inspired {
 }
 
 .banner-image {
-  background-image: url(https://imgr.search.brave.com/pRyRdwfHzyxUizRdzVernSSGJuOJPRcFFp1QWq6kuAQ/fit/1000/539/ce/1/aHR0cHM6Ly9zdGF0/aWMuYm9vc2thLXAu/Y29tL2ltYWdlcy9u/ZXdzX29wdGkvMTAw/MC9ib29iYS1ub3V2/ZWxsZS1leGNsdS1z/dXItaW5zdGFncmFt/LXNvbi5qcGc);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(https://imgr.search.brave.com/pRyRdwfHzyxUizRdzVernSSGJuOJPRcFFp1QWq6kuAQ/fit/1000/539/ce/1/aHR0cHM6Ly9zdGF0/aWMuYm9vc2thLXAu/Y29tL2ltYWdlcy9u/ZXdzX29wdGkvMTAw/MC9ib29iYS1ub3V2/ZWxsZS1leGNsdS1z/dXItaW5zdGFncmFt/LXNvbi5qcGc);
   background-size: cover;
   background-position: center;
   object-fit: cover;
