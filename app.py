@@ -2,6 +2,7 @@ from flask import Flask, render_template
 import random
 from datas import fetch_datas
 from missing_word import hole_in_sentence
+from quizz import fetch_quote
 
 app = Flask(__name__)
 
@@ -9,6 +10,14 @@ app = Flask(__name__)
 @app.route('/')
 def index():
     return render_template('index.html')
+
+
+@app.route('/play')
+def play():
+    # quote_dict = fetch_quote()
+    # quote = quote_dict['phrase']
+    # song_title = quote_dict['song_title']
+    return render_template('play.html')
 
 
 @app.route('/api/quotes/')
