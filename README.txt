@@ -1,4 +1,7 @@
-** Flask API **
+** Booba quotes API **
 
-This project is an API used by my discord bot. It retrieves datas from a google spreadsheet I built.
-Datas are made to be used by the bot to make quizz questions.
+This project is :
+
+- An API that fetches data from a google sheet (using gspread)
+- A discord bot using that API to quizz users (and keeping scores)
+- [In progress] a quizz game in browser

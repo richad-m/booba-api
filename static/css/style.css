@@ -1,5 +1,39 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
 
+/* Play page CSS below */
+
+.question {
+  background: lightgrey;
+  /* border: 5px solid white; */
+  height: fit-content;
+  width: 50vw;
+  border-radius: 6px;
+  margin-bottom: 1em;
+  padding: 1em;
+}
+
+/* Navbar Page CSS below */
+
+.navbar-lewagon {
+  background: var(--purple);
+  font-weight: bolder;
+  align-content: center;
+  height: 2.5em;
+}
+
+.nav-link {
+  color: var(--green) !important;
+}
+
+.navbar-lewagon .navbar-collapse {
+  flex-grow: 0;
+}
+
+.navbar-lewagon .navbar-brand img {
+  width: 40px;
+}
+
+/* Index Page CSS below */
 :root {
   --purple: #401481;
   --green: #70f8ba;
